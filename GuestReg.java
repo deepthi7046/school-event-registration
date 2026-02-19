@@ -71,10 +71,20 @@ public class GuestReg {
             System.out.println("Select Guest Type:");
             System.out.println("1. Celebrity Guest");
             System.out.println("2. Government Guest");
-            System.out.print("Enter choice: ");
+             int choice;
 
-            int choice = sc.nextInt();
-            sc.nextLine(); 
+        while (true) {
+            System.out.print("Enter choice (1 or 2 only): ");
+            choice = sc.nextInt();
+            sc.nextLine();
+
+        if (choice == 1 || choice == 2) {
+        break;
+        } else {
+        System.out.println("Invalid choice! Please select 1 or 2 only.");
+         }
+         }
+
 
             System.out.print("Enter Guest Name: ");
             String name = sc.nextLine();
