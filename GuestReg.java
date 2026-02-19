@@ -54,7 +54,7 @@ class GovernmentGuest extends Guest {
     }
 }
 
-public class SchoolEventApp {
+public class GuestReg {
 
     public static void main(String[] args) {
 
